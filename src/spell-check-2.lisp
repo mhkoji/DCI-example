@@ -152,7 +152,6 @@
   (with-accessors ((i word-iterator-i)
                    (last word-iterator-last)
                    (buffer word-iterator-buffer)) iter
-
     (decf i (length last))
     (replace-text buffer i (+ i (length last)) word)
     (incf i (length word))))
